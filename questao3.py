@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 
 def saudeFinanceira(rendaMensal, gastosMoradia, gastosEducacao, gastosTransporte):
+    """
+        Funcao que calcula sua saude financeira com base em dados do BTG Pactual
+        Com base em seus gastos por renda serem apenas 30% de moradia, 20% de educacao e
+        15% em transporte.
+    """
     #Variaveis 
     totalGastos = gastosMoradia + gastosEducacao + gastosEducacao
     percentualTotalGastos = totalGastos * 100 / rendaMensal
