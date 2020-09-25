@@ -20,3 +20,5 @@ def verificaPib(arquivo, pais, ano):
                 pibPais = coluna.get(anoSelecionado)
                 print("PIB {} em {}: US${} trilhões.".format(paisSelecionado, anoSelecionado, pibPais))
                 break
+
+    print("\n\n")

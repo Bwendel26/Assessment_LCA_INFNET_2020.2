@@ -14,5 +14,5 @@ def variacaoPib(arquivo):
             primeiroAno = float(coluna.get("2013").replace(",", "."))
             ultimoAno = float(coluna.get("2020").replace(",", "."))
             variacao = (ultimoAno * 100 / primeiroAno) - 100
-            paisAtual = coluna.get("Pais")
+            paisAtual = coluna.get("País")
             print("{}: Variação de {:.2f}% entre 2013 e 2020.".format(paisAtual, variacao))
