@@ -22,7 +22,7 @@ def verificaPib(arquivo, pais, ano):
     """
         Função que verifica o pib de um dos países do arquivo:
         http://www.funag.gov.br/ipri/images/analise-pesquisa/tabelas/top15pib.pdf
-        do FMI. Solicita um arquivo .csv como parâmetro.
+        do FMI. Solicita um arquivo .csv como parâmetro, nome do país e ano do pib.
     """
     paisSelecionado = ""
     anoSelecionado = str(ano)
@@ -36,10 +36,3 @@ def verificaPib(arquivo, pais, ano):
                 pibPais = coluna.get(anoSelecionado)
                 print("PIB {} em {}: US${} trilhões.".format(paisSelecionado, anoSelecionado, pibPais))
                 break
-
-#Main
-arqv = "Assessment_PIBs.csv"
-pais = str(input("Informe um país: "))
-ano = int(input("Informe um ano entre 2013 e 2020: "))
-
-verificaPib(arqv, pais, ano)
