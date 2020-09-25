@@ -11,8 +11,8 @@ def rendimentoJurosCompostos(montanteInicial, percentualRendimento, aportePadrao
         em um aporte padrao, período de tempo, percentural de rendimento
         e montante inicial.
     """
-    eixo_y_eixoRendimento = []
-    eixo_x_eixoTemporal = []
+    eixoYRendimento = []
+    eixoXTemporal = []
     rendimentoAtual = 0
     montanteAtual = montanteInicial
 
@@ -20,11 +20,11 @@ def rendimentoJurosCompostos(montanteInicial, percentualRendimento, aportePadrao
         rendimentoAtual = (percentualRendimento * montanteAtual / 100) + aportePadrao
         montanteAtual += rendimentoAtual
         periodoAtual = index + 1
-        eixo_x_eixoTemporal.append(periodoAtual)
-        eixo_y_eixoRendimento.append(montanteAtual)
+        eixoXTemporal.append(periodoAtual)
+        eixoYRendimento.append(montanteAtual)
         print("Após {} períodos(s), o montante será de R${:.2f}.".format(periodoAtual, montanteAtual))
     
-    return eixo_x_eixoTemporal, eixo_y_eixoRendimento
+    return eixoXTemporal, eixoYRendimento
 
 def plotandoGraficoRendimento(eixos):
     plt.plot(eixos[0], eixos[1])

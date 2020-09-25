@@ -16,5 +16,3 @@ def variacaoPib(arquivo):
             variacao = (ultimoAno * 100 / primeiroAno) - 100
             paisAtual = coluna.get("Pais")
             print("{}: Variação de {:.2f}% entre 2013 e 2020.".format(paisAtual, variacao))
-
-variacaoPib("Assessment_PIBs.csv")

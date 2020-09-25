@@ -1,21 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Desenvolva um programa contendo uma função que permita ao usuário solicitar o PIB de um país para um determinado ano. 
-
-#     O programa solicita ao usuário o nome do país e o ano desejado.
-#     Caso o país solicitado ou o ano não sejam válidos, o programa deve informar, na saída, a mensagem: 
-
-#     País não disponível.
-#     ou
-#     Ano não disponível.
-
-#     a depender do tipo de dado não encontrado. 
-
-#     Exemplo de saída do programa:
-
-#     Informe um país: Brasil
-#     Informe um ano entre 2013 e 2020: 2020
-#     PIB Brasil em 2020: US$2.35 trilhões.
 import csv
 
 def verificaPib(arquivo, pais, ano):
